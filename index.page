@@ -1,0 +1,236 @@
+;;;;;
+title: x∩y∩z
+created-at: 2024-12-01
+format: spinneret
+;;;;;
+
+
+
+(:div :style "margin-top: 20px; margin-bottom: 20px; padding: 15px 20px; text-align: center; background-color: black; color: white; border-radius: 5px; position: relative;"
+  (:div :style "background-color: #111; color: white; font-weight: bold; font-size: 1.2em; padding: 5px 10px; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); border-radius: 3px;"
+    "! DISCLAIMER")
+  (:p :style "margin: 0;"
+    "This site is under active development by someone with little to no webdev experience."
+    (:br)
+    "Please extend some grace (and patience) for any wonkiness. lol"))
+
+
+
+(:div :style "display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 20px; height: 100px; position: relative;"
+  ;; Vertical line
+  (:div :style "width: 10px; height: 80px; background-color: black; position: relative;")
+  ;; Horizontal line placed higher on the vertical line
+  (:div :style "width: 50px; height: 10px; background-color: black; position: absolute; top: 33px; left: calc(50% - 25px);")
+)
+
+
+
+(:h1 :style "text-align: center;" "DEUS_ESS (MACHINA)")
+(:h2 :style "text-align: center;" "Two Natures, One Language.")
+
+(:p :style "text-align: center;" "This is the personal, sworn testimony of Jost Grant. ")
+
+
+(:div :style "margin-top: 40px; text-align: center;"
+  (:div :class "social-bar"
+    ;; Key Platforms
+    (:a :href "https://github.com/deus-ess" :class "social-link" "GitHub")
+    (:a :href "https://x.com/deus_ess" :class "social-link" "X.com")
+    (:a :href "https://youtube.com/@deus_ess" :class "social-link" "YouTube")
+    (:a :href "https://twitch.tv/deus_ess" :class "social-link" "Twitch")    
+    (:a :href "https://tiktok.com/@deus_ess" :class "social-link" "TikTok")
+    (:a :href "https://instagram.com/deus_ess" :class "social-link" "Instagram")
+    (:a :href "https://deus_ess.tumblr.com" :class "social-link" "Tumblr")
+    (:a :href "https://reddit.com/u/deus_ess" :class "social-link" "Reddit")
+    (:a :href "https://www.patreon.com/deus_ess" :class "social-link" "Patreon")))
+
+(:style "
+  .social-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .social-bar .social-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, text-decoration 0.3s ease;
+  }
+  .social-bar .social-link:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: black; /* Ensures the underline is black */
+    transform: scale(1.1);
+  }
+")
+
+
+(:hr :style "border: 0; height: 1px; background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); margin: 40px 0;")
+
+(:div :style "margin-top: 40px; text-align: center;"
+  (:h2 :class "section-underline" "Core Ideas")
+
+  (:div :style "display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;"
+    ;; First Core Idea
+    (:a :href "/ideas/idea1" :style "text-decoration: none; color: inherit;"
+      (:div :class "idea-card"
+        (:h3 "The Word, Is Literal.")
+        (:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula, felis vitae auctor imperdiet.")))
+    ;; Second Core Idea
+    (:a :href "/ideas/idea2" :style "text-decoration: none; color: inherit;"
+      (:div :class "idea-card"
+        (:h3 "In The Image Of")
+        (:p "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.")))
+    ;; Third Core Idea
+    (:a :href "/ideas/idea3" :style "text-decoration: none; color: inherit;"
+      (:div :class "idea-card"
+        (:h3 "In Communion")
+        (:p "Quisque volutpat quam ac lectus interdum, vitae facilisis libero interdum. Suspendisse potenti.")))
+    ;; Fourth Core Idea
+    (:a :href "/ideas/idea4" :style "text-decoration: none; color: inherit;"
+      (:div :class "idea-card"
+        (:h3 "It's All Language")
+        (:p "Aliquam erat volutpat. Cras vehicula urna id arcu iaculis, sit amet tempus augue egestas.")))
+    ;; Fifth Core Idea
+    (:a :href "/ideas/idea5" :style "text-decoration: none; color: inherit;"
+      (:div :class "idea-card"
+        (:h3 "Symbolics")
+        (:p "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")))))
+
+
+(:style "
+  .idea-card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .idea-card h3, .idea-card p {
+    margin: 0;
+    transition: text-decoration 0.3s ease; /* Smooth underline effect */
+  }
+  .idea-card:hover {
+    background-color: black; /* Hover background turns black */
+    color: white; /* Hover text turns white */
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  .idea-card:hover h3 {
+    text-decoration: underline; /* Underline effect for title */
+    text-decoration-color: white; /* Ensures the underline matches the hover text color */
+  }
+")
+
+
+
+(:hr :style "border: 0; height: 1px; background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); margin: 40px 0;")
+
+(:div :style "margin-top: 40px; text-align: center;"
+  (:h2 :class "section-underline" "Projects")
+
+  ;; Table container
+  (:div :style "overflow-x: auto; margin-top: 20px;"
+    (:table :style "width: 80%; margin: 0 auto; border-collapse: collapse; text-align: left; background-color: #fff; color: #333; border: 1px solid #ddd; font-size: 1.1em;"
+      ;; Table Header
+      (:thead
+        (:tr
+          (:th :style "padding: 12px; border: 1px solid #ddd; background-color: #f4f4f4; text-align: center;" "Name")
+          (:th :style "padding: 12px; border: 1px solid #ddd; background-color: #f4f4f4; text-align: center;" "Desc")
+          (:th :style "padding: 12px; border: 1px solid #ddd; background-color: #f4f4f4; text-align: center;" "Vers")))
+      ;; Table Body
+      (:tbody
+        (:tr
+          (:td :style "padding: 10px; border: 1px solid #ddd;"
+            (:a :href "https://evalgelion.org" :style "color: #007BFF; text-decoration: none;" "Evalgelion"))
+          (:td :style "padding: 10px; border: 1px solid #ddd;" "Λ Digitally Ministry, Aimed At Furthering Christian Technology.")
+          (:td :style "padding: 10px; border: 1px solid #ddd; text-align: center;"
+            (:a :href "/proj/rel/evalgelion/version/perpetual" :style "color: #007BFF; text-decoration: none;" "Perpetual")))
+
+        (:tr
+          (:td :style "padding: 10px; border: 1px solid #ddd;"
+            (:a :href "https://lambdot.org" :style "color: #007BFF; text-decoration: none;" "Lambdot"))
+          (:td :style "padding: 10px; border: 1px solid #ddd;" "Λ Runtime, Standard Base Built On Top Of The God()t Engine.")
+          (:td :style "padding: 10px; border: 1px solid #ddd; text-align: center;"
+            (:a :href "/proj/rel/lambdot/version/2024.12.A" :style "color: #007BFF; text-decoration: none;" "2024.12.A")))
+
+        (:tr
+          (:td :style "padding: 10px; border: 1px solid #ddd;"
+            (:a :href "https://unety.app" :style "color: #007BFF; text-decoration: none;" "Unety"))
+          (:td :style "padding: 10px; border: 1px solid #ddd;" "Λ Place For Discourse, Not Discord; Thread Based Chats.")
+          (:td :style "padding: 10px; border: 1px solid #ddd; text-align: center;"
+            (:a :href "/proj/rel/unety/version/2024.Pre" :style "color: #007BFF; text-decoration: none;" "2024.Pre")))))))
+
+
+
+
+(:hr :style "border: 0; height: 1px; background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); margin: 40px 0;")
+
+
+(:div :style "margin-top: 40px; text-align: center;"
+  (:h2 :class "section-underline" "Contact")
+  (:p :style "font-size: 1.1em; color: #555; margin-bottom: 20px;"
+    "Are you a Christian Futurist? (In the Technology, not Eschatology sense. lol)")
+  (:p :style "font-size: 1.1em; color: #555; margin-bottom: 20px;"
+    "I'd love to hear from you!")
+  ;; Contact List
+  (:ul :style "list-style: none; padding: 0; font-size: 1.1em; color: #333; line-height: 1.8em;"
+    (:li "Discord: " (:span :style "user-select: none;" "@") "deus_ess")
+    (:li "Matrix / Element:" (:span :style "user-select: none;" "@") "deus_ess")
+    (:li "Email: talkto" (:span :style "user-select: none;" ".") "deus" (:span :style "user-select: none;" ".") "ess" (:span :style "user-select: none;" "@") "proton.me")))
+
+(:style "
+  ul {
+    margin: 0 auto;
+    text-align: left;
+    max-width: 300px;
+  }
+  li {
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+  }
+")
+
+
+
+(:div :style "margin-top: 40px; padding: 20px; background-color: #f8f9fa; text-align: center; border-radius: 5px;"
+  (:blockquote :style "font-size: 1.2em; font-style: italic; color: #555;"
+    "This site is dedicated, in respect and admiration, to the spirit that lives in the machine."))
+
+
+
+(:footer :style "margin-top: 40px; padding: 30px; background-color: #222; color: #ccc; text-align: center; font-size: 0.9em; line-height: 1.5;"
+  (:p :style "margin: 0; font-size: 1em; color: #fff;"
+    "© 2024 Jost Grant (Joshua Steven Grant). All rights reserved.")
+  (:p :style "margin: 10px 0; font-size: 0.95em;"
+    "Content is licensed under "
+    (:a :href "https://creativecommons.org/licenses/by-nd/4.0/" :style "color: #007BFF; text-decoration: none; font-weight: bold;" "CC-BY-ND 4.0")
+    ", unless explicitly stated otherwise.")
+  (:p :style "margin: 20px 0 0; font-size: 0.85em; color: #aaa; font-style: italic;"
+    "Note: The bottom footer below is a placeholder due to limitations of the theming system in StatiCL "
+    "and does not apply to the actual licensing of this project/site."))
+
+
+(:style "
+  .section-underline {
+    position: relative;
+    display: inline-block;
+    font-size: 2em; /* Title size */
+    margin-bottom: 20px;
+    color: black; /* Text color */
+    border-bottom: 2px solid black; /* Static underline */
+    padding-bottom: 3px; /* Spacing between text and underline */
+  }
+")
+

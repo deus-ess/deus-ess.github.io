@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang=""> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <title>DEUS_ESS (MACHINA)</title> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen"> <link href="/css/custom.css" rel="stylesheet" media="screen"> <link rel="alternate" href="/rss.xml" type="application/rss+xml" /> 
+<script>
+var eventSource = new EventSource('/events');
+
+eventSource.addEventListener('reload-page', function(event) {
+  console.log('Reloading the page');
+  location.reload();
+});
+
+eventSource.onerror = function(err) {
+  console.error('EventSource failed:', err);
+};
+</script> </head> <body class="staticl-page"> <div class="container-fluid"> <div class="row-fluid"> <div class="offset2 span8"> <div class="row-fluid"> <div class="navbar navbar-inverse"> <div class="navbar-inner"> <a class="brand" href="/">DEUS_ESS (MACHINA)</a> <ul class="nav"> <li> <a href="/blog/">Blog</a> </li><li> <a href="/music/">Music</a> </li><li> <a href="/about/">About</a> </li> </ul> </div> </div> </div>  <div class="row-fluid"> <div class="row-fluid content">
+<h1 class="page-header">Music Album</h1>
+<p>  </p> <p class="date-posted"> Written on 2024-12-02 </p> <div
+     style="font-family: Arial, sans-serif; background-color: #121212; color: white; min-height: 100vh; margin: 0; display: flex; flex-direction: column; align-items: center; padding: 20px;">
+ <div class=hero-section
+      style="text-align: center; margin-bottom: 40px; max-width: 800px;">
+  <img src="/lisp-album.jpg" alt="Album Cover"
+       style="width: 100%; max-width: 300px; border-radius: 8px; margin-bottom: 20px;">
+  <h1
+      style="font-size: 2.5em; margin-bottom: 10px;">&#39;(LISP)</h1>
+  <p style="font-size: 1.2em; color: #aaa;">An AI Album For -- The Language That 
+   Literally Coined The Term (AI).
+  <div style="margin-top: 20px;">
+   <a href="https://suno.com/playlist/aa6260ae-bf54-4985-9891-b0f1ce4c1244"
+   target=_blank
+   style="display: inline-block; margin-right: 10px; padding: 10px 20px; background-color: #1DB954; color: white; border-radius: 5px; text-decoration: none; font-size: 1.2em; transition: background-color 0.3s;">▶ 
+    Album</a><a
+   href=="https://suno.com/playlist/aa6260ae-bf54-4985-9891-b0f1ce4c1244"
+   target==_blank
+   style="display: inline-block; padding: 10px 20px; background-color: #444; color: white; border-radius: 5px; text-decoration: none; font-size: 1.2em; transition: background-color 0.3s;">↗ 
+    Share</a>
+  </div>
+ </div>
+ <div class=tracklist-section
+      style="width: 100%; max-width: 800px;">
+  <h2
+      style="font-size: 2em; margin-bottom: 20px; color: white;">Tracklist</h2>
+  <ul class=tracklist
+      style="list-style: none; padding: 0;">
+   <li class=track
+       style="display: flex; align-items: center; justify-content: space-between; padding: 10px; background-color: #1f1f1f; border-radius: 5px; margin-bottom: 10px; transition: background-color 0.3s;">
+    <span class=track-info style="display: flex; align-items: center;"><span
+     class=track-number style="margin-right: 15px; font-size: 1.2em; color: #555;">1.</span>
+     <span style="font-size: 1.2em;">Track 1 Name</span></span><span
+    class=track-runtime style="font-size: 1em; color: #aaa;">3:45</span><a
+    class=play-button href="/path-to-track1.mp3" target=_blank
+    style="color: #1DB954; font-size: 1em; text-decoration: none; margin-left: 20px;">▶️</a>
+   <li class=track
+       style="display: flex; align-items: center; justify-content: space-between; padding: 10px; background-color: #1f1f1f; border-radius: 5px; margin-bottom: 10px; transition: background-color 0.3s;">
+    <span class=track-info style="display: flex; align-items: center;"><span
+     class=track-number style="margin-right: 15px; font-size: 1.2em; color: #555;">2.</span>
+     <span style="font-size: 1.2em;">Track 2 Name</span></span><span
+    class=track-runtime style="font-size: 1em; color: #aaa;">4:12</span><a
+    class=play-button href="/path-to-track2.mp3" target=_blank
+    style="color: #1DB954; font-size: 1em; text-decoration: none; margin-left: 20px;">▶️</a>
+   <li class=track
+       style="display: flex; align-items: center; justify-content: space-between; padding: 10px; background-color: #1f1f1f; border-radius: 5px; margin-bottom: 10px; transition: background-color 0.3s;">
+    <span class=track-info style="display: flex; align-items: center;"><span
+     class=track-number style="margin-right: 15px; font-size: 1.2em; color: #555;">3.</span>
+     <span style="font-size: 1.2em;">Track 3 Name</span></span><span
+    class=track-runtime style="font-size: 1em; color: #aaa;">5:08</span><a
+    class=play-button href="/path-to-track3.mp3" target=_blank
+    style="color: #1DB954; font-size: 1em; text-decoration: none; margin-left: 20px;">▶️</a>
+  </ul>
+ </div>
+</div>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+  }
+
+  .hero-section h1 {
+    color: white;
+  }
+
+  .tracklist li:hover {
+    background-color: #292929;
+  }
+
+  .play-button:hover {
+    color: #1ED760;
+  }
+
+  a[target=&#39;_blank&#39;] {
+    transition: background-color 0.3s ease;
+  }
+
+  a[target=&#39;_blank&#39;]:hover {
+    background-color: #1ED760;
+  }
+</style> <ul class="pager"> 
+
+</ul> </div>
+ </div>  <div class="row-fluid"> <hr> <p class="fineprint">Unless otherwise credited all material <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"> <img alt="Creative Commons License" style="border-width:0" src="/img/cc-by-sa.png" /> </a>  <a id="staticl-logo" href="https://github.com/40ants/staticl"> <img src="/img/staticl-logo-small.webp" style="height: 32px" alt="StatiCL logo" /></p> </a> </div> </div> </div> </div> <script src="/js/bootstrap.min.js"></script> </body> </html>
